@@ -1,0 +1,50 @@
+.task {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.num {
+    padding: 10px;
+    color: DarkTurquoise;
+    font-size: 30px;
+}
+
+.sel {
+    padding: 10px;
+}
+
+.res {
+    padding: 10px;
+}
+
+input,
+button {
+    margin: 0 10px;
+    width: 400px;
+    height: 60px;
+    border: 1px solid DarkTurquoise;
+    color: rgb(2, 119, 121);
+    background: #fff;
+    text-align: center;
+    font: 30px bold;
+    border-radius: 4px;
+}
+
+select {
+    margin: 0 10px;
+    width: 200px;
+    height: 60px;
+    border: 1px solid rgb(252, 97, 8);
+    text-align: center;
+    font: 30px bold;
+    color: rgb(252, 97, 8);
+    border-radius: 4px;
+}
+
+.sel label {
+    color: rgb(252, 97, 8);
+    font: 30px bold;
+}
