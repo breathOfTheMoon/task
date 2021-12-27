@@ -6,39 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Task For MaKlai</title>
-     <script src="script.js"></script> 
-
 </head>
 <body>
-    <div class="task">
-        <form id="calc" action="">
-            <div class="num">
+    <form id="calc" action="">
+        <div class="container">
+            <div class="num box">
                 <label for="num1">Введіть перше число</label>
                 <input type="number" id="num1"/>
             </div>
-            <div class="num">
+            <div class="num box">
                 <label for="num2">Введіть друге число</label>
                 <input type="number" id="num2"/>
+                <p id="warning">Неприпустима математична операція!</p>
+            </div>
+            <div class="sel box">
+                <label for="choose">Оберіть дію</label>
+                <select name="num" form="data" id="choose">
+                        <option value="plus"> + </option>
+                        <option value="minus"> - </option>
+                        <option value="mult"> * </option>
+                        <option value="div"> / </option>
+                </select>
             </div>
 
-
-        <div class="sel">
-            <label for="choose">Оберіть дію</label>
-            <select name="num" form="data" id="choose">
-                    <option value="plus"> + </option>
-                    <option value="minus"> - </option>
-                    <option value="mult"> * </option>
-                    <option value="div"> / </option>
-            </select>
+            <div class="box">
+                <button type="button" onclick="func()">Результат </button>
+            </div>
+            <div class="box">
+                <input type="number" value="" id="box" disabled>
+                <p id="round" class="zero">**Виконано округлення</p>
+            </div>
         </div>
-
-        <div class="res">
-            <button type="button" onclick="func()" value="Результат">Результат </button>
-            <input type="number" value="" id="box" disabled>
-        </div>
-        </form>
-    </div>
+        
+    </form>
     
+    <script src="script.js"></script> 
 
 </body>
 </html>
